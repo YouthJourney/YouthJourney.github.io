@@ -126,15 +126,15 @@
 
 
 
-<meta name="description" content="最近由于项目的需要，经常需要使用opencv读视频操作，会经常遇到一个问题，就是视频读完之后会出现报错的情况，虽然不影响代码结果，但是对于吹毛求疵的我实在忍受不了。 会报错的程序： 123456789101112131415161718192021222324252627282930313233# -*-coding:utf-8-*-&quot;&quot;&quot;File Name: rea">
+<meta name="description" content="最近由于项目的需要，经常需要使用opencv读视频操作，会经常遇到一个问题，就是视频读完之后会出现报错的情况，虽然不影响代码结果，但是对于吹毛求疵的我实在忍受不了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决OpenCV读完视频报错的问题">
 <meta property="og:url" content="https://youthjourney.github.io/2021/10/06/%E8%A7%A3%E5%86%B3OpenCV%E8%AF%BB%E5%AE%8C%E8%A7%86%E9%A2%91%E6%8A%A5%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Hong&#39;s home">
-<meta property="og:description" content="最近由于项目的需要，经常需要使用opencv读视频操作，会经常遇到一个问题，就是视频读完之后会出现报错的情况，虽然不影响代码结果，但是对于吹毛求疵的我实在忍受不了。 会报错的程序： 123456789101112131415161718192021222324252627282930313233# -*-coding:utf-8-*-&quot;&quot;&quot;File Name: rea">
+<meta property="og:description" content="最近由于项目的需要，经常需要使用opencv读视频操作，会经常遇到一个问题，就是视频读完之后会出现报错的情况，虽然不影响代码结果，但是对于吹毛求疵的我实在忍受不了。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-10-06T00:49:20.000Z">
-<meta property="article:modified_time" content="1970-01-01T00:00:00.001Z">
+<meta property="article:modified_time" content="2021-10-06T00:49:20.000Z">
 <meta property="article:author" content="Hong">
 <meta property="article:tag" content="opencv-python">
 <meta name="twitter:card" content="summary">
@@ -390,8 +390,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="1970-01-01T08:00:00+08:00">
-                1970-01-01
+              <time title="更新于" itemprop="dateModified" datetime="2021-10-06T08:49:20+08:00">
+                2021-10-06
               </time>
             
           </span>
@@ -413,6 +413,17 @@
           
 
           
+          
+             <span id="/2021/10/06/%E8%A7%A3%E5%86%B3OpenCV%E8%AF%BB%E5%AE%8C%E8%A7%86%E9%A2%91%E6%8A%A5%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/" class="leancloud_visitors" data-flag-title="解决OpenCV读完视频报错的问题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -466,10 +477,10 @@
 
       
         <p>最近由于项目的需要，经常需要使用opencv读视频操作，会经常遇到一个问题，就是视频读完之后会出现报错的情况，虽然不影响代码结果，但是对于吹毛求疵的我实在忍受不了。</p>
+<span id="more"></span>
+
 <p>会报错的程序：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*-coding:utf-8-*-</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">File Name: read_video.py</span></span><br><span class="line"><span class="string">Program IDE: PyCharm</span></span><br><span class="line"><span class="string">Create File By Author: Hong</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">read_video</span>(<span class="params">video_path: <span class="built_in">str</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    OpenCV读视频小工具，解决视频读完报错的问题</span></span><br><span class="line"><span class="string">    :param video_path: 输入需要读取的视频文件路径</span></span><br><span class="line"><span class="string">    :return: 没有返回值</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;视频路径：&#x27;</span>, video_path)</span><br><span class="line">    cap = cv2.VideoCapture(video_path)</span><br><span class="line">    <span class="keyword">while</span> cap.isOpened():</span><br><span class="line">        <span class="comment"># get a frame</span></span><br><span class="line">        ret, frame = cap.read()</span><br><span class="line"> </span><br><span class="line">        cv2.imshow(<span class="string">&quot;capture&quot;</span>, frame)</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> == <span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;视频读完！&#x27;</span>)</span><br><span class="line">    cap.release()</span><br><span class="line">    cv2.destroyAllWindows()</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    path = <span class="string">r&#x27;D:\multi_insect_videos\multi_object00.mp4&#x27;</span></span><br><span class="line">    read_video(path)</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
 
 <p>这个程序可以把视频正常读完，但是结束之后会输出错误。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;E:/PyCharmDocument/create_ST_image/multi_insect_processing/crop_video_to_images.py&quot;</span>, line <span class="number">76</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    read_video(path)</span><br><span class="line">  File <span class="string">&quot;E:/PyCharmDocument/create_ST_image/multi_insect_processing/crop_video_to_images.py&quot;</span>, line <span class="number">65</span>, <span class="keyword">in</span> read_video</span><br><span class="line">    cv2.imshow(<span class="string">&quot;capture&quot;</span>, frame)</span><br><span class="line">cv2.error: OpenCV(<span class="number">4.5</span><span class="number">.3</span>) C:\Users\runneradmin\AppData\Local\Temp\pip-req-build-uzca7qz1\opencv\modules\imgproc\src\color.cpp:<span class="number">182</span>: error: (-<span class="number">215</span>:Assertion failed) !_src.empty() <span class="keyword">in</span> function <span class="string">&#x27;cv::cvtColor&#x27;</span></span><br></pre></td></tr></table></figure>
@@ -668,7 +679,7 @@ var jiathis_config={
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -781,7 +792,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.7k</span>
+    <span title="Site words total count">4.7k</span>
   
 </div>
 
@@ -1299,6 +1310,113 @@ var jiathis_config={
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("OKqkSPYeh8bdXqUEdOByIpdi-gzGzoHsz", "W7AscW2iOCvotvtsNxhbMISi");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 

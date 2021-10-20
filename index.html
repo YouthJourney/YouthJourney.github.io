@@ -344,6 +344,629 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://youthjourney.github.io/2021/10/20/Opencv-Python%E5%9B%BE%E5%83%8F%E5%83%8F%E7%B4%A0%E5%9D%87%E5%80%BC%E3%80%81%E6%96%B9%E5%B7%AE%EF%BC%8C%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%BD%A2%E7%8A%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/dog.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hong's home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/10/20/Opencv-Python%E5%9B%BE%E5%83%8F%E5%83%8F%E7%B4%A0%E5%9D%87%E5%80%BC%E3%80%81%E6%96%B9%E5%B7%AE%EF%BC%8C%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%BD%A2%E7%8A%B6/" itemprop="url">Opencv-Python图像像素均值、方差，绘制几何形状</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-10-20T11:03:27+08:00">
+                2021-10-20
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-10-20T11:03:27+08:00">
+                2021-10-20
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/opencv/" itemprop="url" rel="index">
+                    <span itemprop="name">opencv</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/10/20/Opencv-Python%E5%9B%BE%E5%83%8F%E5%83%8F%E7%B4%A0%E5%9D%87%E5%80%BC%E3%80%81%E6%96%B9%E5%B7%AE%EF%BC%8C%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%BD%A2%E7%8A%B6/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/10/20/Opencv-Python%E5%9B%BE%E5%83%8F%E5%83%8F%E7%B4%A0%E5%9D%87%E5%80%BC%E3%80%81%E6%96%B9%E5%B7%AE%EF%BC%8C%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%BD%A2%E7%8A%B6/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/10/20/Opencv-Python%E5%9B%BE%E5%83%8F%E5%83%8F%E7%B4%A0%E5%9D%87%E5%80%BC%E3%80%81%E6%96%B9%E5%B7%AE%EF%BC%8C%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%BD%A2%E7%8A%B6/" class="leancloud_visitors" data-flag-title="Opencv-Python图像像素均值、方差，绘制几何形状">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  994
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="图像像素均值、方差"><a href="#图像像素均值、方差" class="headerlink" title="图像像素均值、方差"></a>图像像素均值、方差</h2><p>计算数组元素的均值和方差函数<code>cv.meanStdDev()</code>。传入数组数据，返回数组数据的均值和方差。在图像数组中，可以计算出图像数组的像素均值和方差。</p>
+<p>使用<code>np.min</code>和<code>np.max</code>可以计算数组元素的最小值和最大值。在图像数组中，可以计算每个通道像素最小值和最大值。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/10/20/Opencv-Python%E5%9B%BE%E5%83%8F%E5%83%8F%E7%B4%A0%E5%9D%87%E5%80%BC%E3%80%81%E6%96%B9%E5%B7%AE%EF%BC%8C%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%BD%A2%E7%8A%B6/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://youthjourney.github.io/2021/10/20/OpenCV-Python%E7%BB%98%E5%88%B6%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%92%8C%E9%80%89%E6%8B%A9%E9%9A%8F%E6%9C%BA%E9%A2%9C%E8%89%B2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/dog.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hong's home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/10/20/OpenCV-Python%E7%BB%98%E5%88%B6%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%92%8C%E9%80%89%E6%8B%A9%E9%9A%8F%E6%9C%BA%E9%A2%9C%E8%89%B2/" itemprop="url">OpenCV-Python绘制多边形和选择随机颜色</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-10-20T11:00:04+08:00">
+                2021-10-20
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-10-20T11:00:04+08:00">
+                2021-10-20
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/opencv/" itemprop="url" rel="index">
+                    <span itemprop="name">opencv</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/10/20/OpenCV-Python%E7%BB%98%E5%88%B6%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%92%8C%E9%80%89%E6%8B%A9%E9%9A%8F%E6%9C%BA%E9%A2%9C%E8%89%B2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/10/20/OpenCV-Python%E7%BB%98%E5%88%B6%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%92%8C%E9%80%89%E6%8B%A9%E9%9A%8F%E6%9C%BA%E9%A2%9C%E8%89%B2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/10/20/OpenCV-Python%E7%BB%98%E5%88%B6%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%92%8C%E9%80%89%E6%8B%A9%E9%9A%8F%E6%9C%BA%E9%A2%9C%E8%89%B2/" class="leancloud_visitors" data-flag-title="OpenCV-Python绘制多边形和选择随机颜色">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="绘制多边形"><a href="#绘制多边形" class="headerlink" title="绘制多边形"></a>绘制多边形</h2><p>在使用 opencv 绘制几何图像时，除了大多数情况下绘制的<a target="_blank" rel="noopener" href="https://blog.csdn.net/hallobike/article/details/120611521">简单形状</a>，有时也需要绘制复杂的多边形形状。下面就来一起尝试如何绘制多边形形状。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/10/20/OpenCV-Python%E7%BB%98%E5%88%B6%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%92%8C%E9%80%89%E6%8B%A9%E9%9A%8F%E6%9C%BA%E9%A2%9C%E8%89%B2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://youthjourney.github.io/2021/10/12/OpenCV-Python%E5%9B%BE%E5%83%8F%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%9B%BE%E5%83%8F%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BD%AC%E6%8D%A2/%E6%9B%BE%E5%9B%BD%E8%97%A916%E5%AD%97%E5%89%8D%E8%A8%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/dog.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hong's home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/10/12/OpenCV-Python%E5%9B%BE%E5%83%8F%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%9B%BE%E5%83%8F%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BD%AC%E6%8D%A2/%E6%9B%BE%E5%9B%BD%E8%97%A916%E5%AD%97%E5%89%8D%E8%A8%80/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-10-12T16:54:42+08:00">
+                2021-10-12
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-10-12T16:54:42+08:00">
+                2021-10-12
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/10/12/OpenCV-Python%E5%9B%BE%E5%83%8F%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%9B%BE%E5%83%8F%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BD%AC%E6%8D%A2/%E6%9B%BE%E5%9B%BD%E8%97%A916%E5%AD%97%E5%89%8D%E8%A8%80/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/10/12/OpenCV-Python%E5%9B%BE%E5%83%8F%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%9B%BE%E5%83%8F%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BD%AC%E6%8D%A2/%E6%9B%BE%E5%9B%BD%E8%97%A916%E5%AD%97%E5%89%8D%E8%A8%80/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/10/12/OpenCV-Python%E5%9B%BE%E5%83%8F%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%9B%BE%E5%83%8F%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BD%AC%E6%8D%A2/%E6%9B%BE%E5%9B%BD%E8%97%A916%E5%AD%97%E5%89%8D%E8%A8%80/" class="leancloud_visitors" data-flag-title="">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  904
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="曾国藩十六字箴言：“物来顺应，未来不迎，当时不杂，既过不恋”"><a href="#曾国藩十六字箴言：“物来顺应，未来不迎，当时不杂，既过不恋”" class="headerlink" title="曾国藩十六字箴言：“物来顺应，未来不迎，当时不杂，既过不恋”"></a>曾国藩十六字箴言：“物来顺应，未来不迎，当时不杂，既过不恋”</h2><p>在中华上下五千年的历史长河里，有一位名人是我最佩服的。他就是晚清的政治家、文学家曾国藩，他可以说是真正做到了“修身，齐家，治国，平天下”。</p>
+<p>从大到治国、治军，小到治家、修身，他身上都有很多东西值得后人思考和学习的。他一生最大的功绩莫过于创立湘军，其治军的思想对后世影响很大。当然，他曾经为镇压太平天国起义，也屠杀过不少平民百姓，为世人所诟病。</p>
+<p>有后人结合曾国藩的一生，编过一副对联：“立德立功立言三不朽，为师为将为相一完人。”</p>
+<p><img src="https://n.sinaimg.cn/sinakd20200708ac/160/w600h360/20200708/ade3-iwasyei2758620.jpg">  </p>
+<p>他一生奉行儒学，但又对西方文化兼收并蓄，可以说是近代接受先进思想的典范。此外，他治家极严，对父母兄弟，敬爱有加，但不谋私；对待子女，严格独立，自力更生。其著作有《曾国藩家书》、《曾文正公集》等。</p>
+<p>其最为有名的，当属其十六字箴言：“物来顺应，未来不迎，当时不杂，既过不恋。”</p>
+<p>这句话的意思是说，凡事要顺其自然，坦然面对，活在当下，不过度担忧未来还未发生的事，要心无杂念地做好眼前的事，不要去留恋和纠结发生过的事。</p>
+<p><img src="https://n.sinaimg.cn/sinakd20200708ac/201/w640h361/20200708/cf22-iwasyei2758619.jpg">  </p>
+<p>虽然只是简短的十六字，却道尽了为人处世的智慧哲理。如果你能早日参透其中之理，必定受益终身。</p>
+<p>这句话的原文出自蔡锷将军编录的《曾胡治兵语录》一书中：“当读书，则读书，心无着于见客也；当见客，则见客，心无着于读书也。一有着，则私也。灵明无着，物来顺应，未来不迎，当时不杂，既过不恋。”</p>
+<p>纵观古今，成大事者，都不拘于小节，但又起于细节；不虚度时光，只珍惜当下；既能拿得起，又能放得下。</p>
+<p>人生，有得必有失，有失必有得。失去的东西，或许原本就不属于你，你再纠缠下去，也于事无补。未来还未发生的事，你大可不必过度担忧，该来的迟早会来，正所谓：“是福不是祸，是祸躲不过”。</p>
+<p>当你整天生活在遗憾和恐惧之中，又怎么能专心于眼前的事。人一辈子有很多机会都是转瞬即逝，你能抓住就有可能离成功更进一步。如果你一直犹豫，举棋不定，很可能错失良机，而且还浪费生命。</p>
+<p>做任何事情都要全神贯注，专心致志，而不是这山还望那山高。如果没有持之以恒的精神，必将一事无成。</p>
+<p>人生最怕的是什么？就是犹豫不决，瞻前顾后，长此以往，必定会顾此失彼，停滞不前。</p>
+<p><img src="https://n.sinaimg.cn/sinakd20200708ac/114/w640h274/20200708/ebe5-iwasyei2758621.jpg">  </p>
+<p>水无常形，兵无常势；兵来将挡，水来土掩。生活充满未知与变数，与其惴惴不安，胡乱揣测，倒不如专注于当下的生活。</p>
+<p>生命短暂，人生无常。错过的不再回来；回来的也不再完美；拥有的就好好珍惜，最重要的是活在当下。</p>
+<p>我们唯一能做的，就是坦然面对自己，积极应对身边的事与物，用最好的心态活出最美的样子，不要让以后再“悔不如当初”，空叹余生！</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://youthjourney.github.io/2021/10/06/OpenCV-Python%E5%9B%BE%E5%83%8F%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%9B%BE%E5%83%8F%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BD%AC%E6%8D%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -391,8 +1014,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="1970-01-01T08:00:00+08:00">
-                1970-01-01
+              <time title="更新于" itemprop="dateModified" datetime="2021-10-06T14:29:47+08:00">
+                2021-10-06
               </time>
             
           </span>
@@ -436,6 +1059,17 @@
           
 
           
+          
+             <span id="/2021/10/06/OpenCV-Python%E5%9B%BE%E5%83%8F%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%9B%BE%E5%83%8F%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BD%AC%E6%8D%A2/" class="leancloud_visitors" data-flag-title="OpenCV-Python图像的创建和图像颜色空间转换">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -491,10 +1125,7 @@
         
           <h2 id="图像颜色空间转换"><a href="#图像颜色空间转换" class="headerlink" title="图像颜色空间转换"></a>图像颜色空间转换</h2><p>在使用OpenCV读去图像文件时，我们得到的图像通道顺序是BGR，每个通道的数值是0~255之间。由于对图像操作的需要，我们会将图像进行颜色空间转换处理，通常是将图像从RGB颜色空间转换到其他颜色空间，比如HSV颜色空间。这个过程需要用到两个opencv库函数。</p>
 <ul>
-<li><p><strong>图像读取函数<code>cv2.imread()</code></strong><br>这个函数有两个参数，第一个是图像文件名，即输入图像的文件所在路径和名称；第二个参数是<code>flag</code>，指定读取图像文件的类型，常见的三种读取图像类型的标志为:<br>(1) <code>cv2.IMREAD_COLOR</code>: 默认参数，读入彩色图像，忽略alpha通道，数字1；<br>(2) <code>cv2.IMREAD_GRAYSCALE</code>：读入灰度图片，数字0；<br>(3) <code>cv2.IMREAD_UNCHANGED</code>：读入完整图片，包括alpha通道，数字-1。</p>
-</li>
-<li><p><strong>转换图像颜色空间函数<code>cv2.cvtColor()</code></strong><br>这个函数同样是两个参数，一个是读入的图像image，一个是指定图像要转换的类型，比如灰度类型，HSV颜色空间，BGR转RGB通道等  </p>
-</li>
+<li><strong>图像读取函数<code>cv2.imread()</code></strong><br>这个函数有两个参数，第一个是图像文件名，即输入图像的文件所在路径和名称；第二个参数是<code>flag</code>，指定读取图像文件的类型，常见的三种读取图像类型的标志为:<br>(1) <code>cv2.IMREAD_COLOR</code>: 默认参数，读入彩色图像，忽略alpha通道，数字1；<br>(2) <code>cv2.IMREAD_GRAYSCALE</code>：读入灰度图片，数字0；<br>(3) <code>cv2.IMREAD_UNCHANGED</code>：读入完整图片，包括alpha通道，数字-1。</li>
 </ul>
           <!--noindex-->
           <div class="post-button text-center">
@@ -596,8 +1227,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="1970-01-01T08:00:00+08:00">
-                1970-01-01
+              <time title="更新于" itemprop="dateModified" datetime="2021-10-06T08:49:20+08:00">
+                2021-10-06
               </time>
             
           </span>
@@ -619,6 +1250,17 @@
           
 
           
+          
+             <span id="/2021/10/06/%E8%A7%A3%E5%86%B3OpenCV%E8%AF%BB%E5%AE%8C%E8%A7%86%E9%A2%91%E6%8A%A5%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/" class="leancloud_visitors" data-flag-title="解决OpenCV读完视频报错的问题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -673,8 +1315,6 @@
       
         
           <p>最近由于项目的需要，经常需要使用opencv读视频操作，会经常遇到一个问题，就是视频读完之后会出现报错的情况，虽然不影响代码结果，但是对于吹毛求疵的我实在忍受不了。</p>
-<p>会报错的程序：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*-coding:utf-8-*-</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">File Name: read_video.py</span></span><br><span class="line"><span class="string">Program IDE: PyCharm</span></span><br><span class="line"><span class="string">Create File By Author: Hong</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">read_video</span>(<span class="params">video_path: <span class="built_in">str</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    OpenCV读视频小工具，解决视频读完报错的问题</span></span><br><span class="line"><span class="string">    :param video_path: 输入需要读取的视频文件路径</span></span><br><span class="line"><span class="string">    :return: 没有返回值</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;视频路径：&#x27;</span>, video_path)</span><br><span class="line">    cap = cv2.VideoCapture(video_path)</span><br><span class="line">    <span class="keyword">while</span> cap.isOpened():</span><br><span class="line">        <span class="comment"># get a frame</span></span><br><span class="line">        ret, frame = cap.read()</span><br><span class="line"> </span><br><span class="line">        cv2.imshow(<span class="string">&quot;capture&quot;</span>, frame)</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> == <span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;视频读完！&#x27;</span>)</span><br><span class="line">    cap.release()</span><br><span class="line">    cv2.destroyAllWindows()</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    path = <span class="string">r&#x27;D:\multi_insect_videos\multi_object00.mp4&#x27;</span></span><br><span class="line">    read_video(path)</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2021/10/06/%E8%A7%A3%E5%86%B3OpenCV%E8%AF%BB%E5%AE%8C%E8%A7%86%E9%A2%91%E6%8A%A5%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/#more" rel="contents">
@@ -765,7 +1405,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -878,7 +1518,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.7k</span>
+    <span title="Site words total count">4.7k</span>
   
 </div>
 
@@ -1392,6 +2032,113 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("OKqkSPYeh8bdXqUEdOByIpdi-gzGzoHsz", "W7AscW2iOCvotvtsNxhbMISi");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
